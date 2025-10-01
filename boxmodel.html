@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Box Model Example</title>
+    <style>
+        .box {
+            width: 300px;
+            height: 150px;
+            padding: 20px;
+            border: 5px solid #3498db;
+            margin: 30px;
+            background-color: #f1c40f;
+        }
+        #outer-box {
+            width: 250px;
+            height: 100px;
+            background-color: #ecf0f1;
+        }
+        #inner-box {
+            width: 150px;
+            height: 50px;
+            background-color: #bdc3c7;
+        }   
+        .box {
+            width: 150px;
+            height: 150px;
+            background-color: #2ecc71;
+        }
+        #box1 {
+            background-color: #e74c3c;
+        }
+        #box2 {
+            background-color: #3498db;
+        }
+        #box3 {
+            background-color: #f1c40f;
+        }
+        #box4 {
+            background-color: #9b59b6;
+        }
+        /* #outbox {
+            display: flex;
+            gap: 10px;
+            margin-top: 20px;
+        } */
+         #outbox {
+            width: 700px;
+            height: 500px;
+            background-color: #ecf0f1;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        This is a box demonstrating the CSS box model.<br>
+        <strong>Content</strong> + <strong>Padding</strong> + <strong>Border</strong> + <strong>Margin</strong>
+    </div>
+    <div id="outer-box" style="border: 3px solid #e74c3c; padding: 15px; margin: 25px;">
+        This is the outer box.<br>
+        <div id="inner-box" style="border: 2px dashed #2ecc71; padding: 10px; margin: 10px;">
+            This is the inner box.
+        </div>
+    </div>
+    <div style="border: 2px solid #8e44ad; padding: 10px; margin: 20px; width: 200px; box-sizing: border-box;">
+        This box uses <code>box-sizing: border-box;</code>.<br>
+        The total width includes padding and border.    
+    </div>
+    <div id="outbox">
+        <div id="box1" class="box">
+        </div>
+        <div id="box2" class="box">
+        </div>
+        <div id="box3" class="box">
+        </div>
+        <div id="box4" class="box">
+        </div>
+    </div>
+</body>
+</html>

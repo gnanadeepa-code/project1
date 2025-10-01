@@ -1,0 +1,34 @@
+h1 {
+    color: #0dd7a8;
+    background-color: bisque;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase; 
+    letter-spacing: 2px;
+    word-spacing: 4px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    border: 2px solid #0dd7a8;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+#para1 {
+    font-size: 18px;
+    color: #333;
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+}   
+.highlight {
+    background-color: yellow;
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 3px;
+}   

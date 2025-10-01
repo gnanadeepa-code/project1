@@ -7,8 +7,118 @@
 </head>
 <body>
     <h1>Hello, World!</h1>
-    <p>This is a simple HTML file.</p>
-    
+    <br>
+    <p>This is a simple HTML file.<i>This tutorial introduces the foundational HTML tags used in web design.</i> <u>It explains the structure of an HTML document and demonstrates how to use key elements like headings,</u> paragraphs, images,<strong> buttons, and hyperlinks</strong>. The <del> emphasizes semantic</del> clarity, syntax accuracy, and practical examples, making it ideal for beginners.</p>
+    <hr>
+    <img src="https://via.placeholder.com/150" alt="Placeholder Image" width="150" height="150">
+    <button>Click Me!</button>
+    <br>
+    <a href="https://www.example.com" target="_blank">Visit Example.com</a>
+    <hr>
+    <h2>My Favorite Web Technologies</h2>
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+    </ul>
+    <ol>
+        <li>First Item</li>
+        <li>Second Item</li>
+        <li>Third Item</li>
+    </ol>
+    <h3>Tables</h3>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>City</th>
+            </tr>
+        </thead>
+       <tbody>
+            <tr>
+                <td>Alice</td>
+                <td>30</td>
+                <td>New York</td>
+            </tr>
+            <tr>
+                <td>Bob</td>
+                <td>25</td>
+                <td>Los Angeles</td>
+            </tr>
+        </tbody>
+    </table>
+    <hr>
+    <h3>Input Form</h3>
+    <form action="/submit" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <br>
+        <label for ="age">Age:</label>
+        <input type="number" id="age" name="age" min="1" max="120" required>
+        <br>
+        <label for="gender">Gender:</label>
+        <input type="radio" id="gender" name="gender" value ="male"/>
+        <label for="gender">Male</label>
+        <input type="radio" id="gender" name="gender" value ="female"  />
+        <label for="gender">Female</label>
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <br>
+        <label for="dob">Date of Birth:</label> 
+        <input type="date" id="dob" name="dob" required>
+        <br>    
+        <label for"qualification">Qualification:</label>
+        <select id="qualification" name="qualification">
+            <option value="highschool">High School</option>
+            <option value="bachelor">Bachelor's Degree</option>
+            <option value="master">Master's Degree</option>
+            <option value="phd">PhD</option>        
+        </select>
+        <br>
+        <label for="skills">Skills:</label>
+        <select id="skills" name="skills" multiple>
+            <option value="html">HTML</option>
+            <option value="css">CSS</option>
+            <option value="javascript">JavaScript</option>
+            <option value="python">Python</option>
+            <option value="java">Java</option>
+        </select>
+        <br>
+        <label >Skills:</label>   
+        <input type="checkbox" id="html" name="skills" value="html">
+        <label for="html">HTML</label>  
+        <input type="checkbox" id="css" name="skills" value="css">
+        <label for="css">CSS</label>    
+        <input type="checkbox" id="javascript" name="skills" value="javascript">
+        <label for="javascript">JavaScript</label>
+        <br>
+        <label for="bio">Bio:</label>
+        <br>
+        <textarea id="bio" name="bio" rows="4" cols="50" placeholder="Tell us about yourself...">
+
+        </textarea>
+        <br>
+        <input type="submit" value="Save">
+    </form>
+    <hr>
+    <video width="320" height="240" controls muted>
+        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4" >
+        Your browser does not support the video tag.    
+    </video>
+    <br>
+    <audio controls>
+        <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.    
+    </audio>
+    <br>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/BzYMFd-lQL4?si=gRugYowgKaLIPFiA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <iframe src="https://www.example.com" title="Example Website" width="600" height="400"></iframe>
 </body>
 </html>
 
