@@ -1,11 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>JS Demo</title> 
+    <style>
+        .color-box {
+            width: 300px;
+            height: 300px;
+            border: 5px solid black;
+            margin-top: 20px;
+        }
+    </style>
 </head>
+
 <body>
-    
+    <div>
+        <input type="text" id="value" />
+        <button onclick="getInput()">Click Me!</button>
+        <h2 id="display"></h2>
+    </div>
+    <div class="color-box">
+       <button onclick="colorChange()">Change Colour</button> 
+        
+    </div>
 </body>
+<script>
+    console.log("Hello World!");
+    
+    
+    function getInput() {
+        var userInput = document.getElementById("value").value;
+        document.getElementById("display").innerHTML = userInput;
+        if(userInput === "student") {
+            alert("Hello Student!");
+        } else {
+            alert("Hello User!");
+        }
+        alert(userInput);
+    }   
+
+    function colorChange() {
+        var colors = ["red", "blue", "green", "yellow", "pink", "purple"];
+        var box = document.querySelector(".color-box");
+        var currentColor = box.style.backgroundColor;
+        var newColor = colors[Math.floor(Math.random() * colors.length)];
+        while (newColor === currentColor) {
+            newColor = colors[Math.floor(Math.random() * colors.length)];
+        }
+        box.style.backgroundColor = newColor;
+       
+    }   
+   
+
+</script>
 </html>
